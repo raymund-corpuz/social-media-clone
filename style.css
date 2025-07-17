@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tiktok Sans", sans-serif;
+}
+
+:root {
+  --primary: #0b6be9;
+  --secondary: #eeeeee;
+  --white: #fdfdfd;
+  --dark: #696969;
+  --darker: #636665;
+}
+.nav-bar {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  background-color: var(--primary);
+  justify-content: space-between;
+  z-index: 2;
+  position: fixed;
+}
+.logo {
+  display: flex;
+  color: var(--white);
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  color: var(--white);
+  margin: 1rem;
+  gap: 0.5rem;
+  width: 35px;
+  fill: var(--white);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.profile input {
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  width: 250px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+}
+
+.side-bar {
+  background-color: var(--secondary);
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  padding-top: 50px;
+}
+
+.main-section {
+  width: 900px;
+  background-color: red;
+  height: 100vh;
+  overflow: auto;
+  z-index: -2;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+.event-section {
+  background-color: var(--secondary);
+  width: 300px;
+}
+
+.side-bar > ul > li {
+  padding: 0.8rem 0;
+  padding-left: 2.5rem;
+  color: var(--dark);
+}
+.side-bar h3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: var(--darker);
+}
+
+.featured-photos {
+  display: flex;
+  overflow-x: auto;
+  margin: 1rem;
+}
+
+.featured-photos img {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
