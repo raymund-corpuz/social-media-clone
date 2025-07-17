@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Tiktok Sans", sans-serif;
+  /* border: 1px solid gray; */
 }
 
 :root {
@@ -13,6 +14,10 @@
   --white: #fdfdfd;
   --dark: #696969;
   --darker: #636665;
+}
+
+body {
+  background-color: #eeeeee;
 }
 .nav-bar {
   height: 50px;
@@ -65,7 +70,7 @@ main {
 
 .side-bar {
   background-color: var(--secondary);
-  width: 300px;
+  width: 350px;
   height: 100vh;
   position: fixed;
   z-index: -1;
@@ -74,17 +79,22 @@ main {
 
 .main-section {
   width: 900px;
-  background-color: red;
   height: 100vh;
   overflow: auto;
   z-index: -2;
   position: absolute;
-  margin-left: 300px;
-  margin-top: 50px;
+  margin-left: 350px;
+  margin-top: 40px;
+  background-color: var(--white);
 }
 .event-section {
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  padding-top: 50px;
   background-color: var(--secondary);
-  width: 300px;
+  margin-left: calc(800px + 350px);
 }
 
 .side-bar > ul > li {
