@@ -78,14 +78,16 @@ main {
 }
 
 .main-section {
-  width: 900px;
+  width: 800px;
   height: 100vh;
   overflow: auto;
-  z-index: -2;
+  z-index: 1;
   position: absolute;
   margin-left: 350px;
   margin-top: 40px;
   background-color: var(--white);
+  padding: 1rem;
+  overflow: hidden;
 }
 .event-section {
   width: 350px;
@@ -111,10 +113,62 @@ main {
 .featured-photos {
   display: flex;
   overflow-x: auto;
-  margin: 1rem;
+  margin: 0 1rem;
+  overflow: hidden;
 }
 
 .featured-photos img {
   margin: 0.5rem;
   border-radius: 0.5rem;
+}
+
+.public-activity {
+  width: 725px;
+  margin: 1.5rem;
+  background-color: var(--secondary);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+  color: var(--darker);
+}
+
+.question {
+  margin-top: 1rem;
+}
+.public {
+  color: var(--dark);
+  font-size: 12px;
+  font-weight: 400;
+}
+.public-activity input {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+}
+
+.activity-buttons button {
+  border: none;
+  margin-right: 1rem;
+  color: var(--darker);
+  margin-top: 1rem;
+}
+
+.event-section {
+  color: var(--darker);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.event-section p {
+  padding: 4px;
+}
+
+.event-title,
+.advertisements-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
